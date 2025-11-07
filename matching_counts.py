@@ -11,6 +11,11 @@ def count_matching(matrix, target):
     @param target [int]: the value to match
     @return [int]: the number of matching elements
     """
+    count = 0
+    for row in matrix:
+        for element in row:
+            if element == target:
+                count += 1
 
     # TODO: set initial variable `count`
 
